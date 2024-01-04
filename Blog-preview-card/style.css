@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.container .card {
+  width: 400px;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  padding: 1rem;
+}
+
+.container .card .img-banner {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.container .card .card-slug {
+  width: 100px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: hsl(47, 88%, 63%);
+  text-align: center;
+  margin-top: 25px;
+}
+
+.container .card .card-slug span {
+  font-weight: bold;
+}
+
+.container .card .card-published {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.container .card .card-title h2:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.container .card .card-text {
+  color: hsl(0, 0%, 50%);
+  font-size: 16px;
+  margin-top: 15px;
+  letter-spacing: 1.5px;
+}
+
+.container .card .card-profile {
+  margin-top: 15px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.container .card h5 {
+  margin-left: 15px;
+  font-weight: bold;
+  color: hsl(0, 0%, 7%);
+}
+
+/* mobile design */
+
+@media screen and (max-width: 375px) {
+  .container .card .card-slug span {
+    font-size: 14px;
+  }
+
+  .container .card .card-puslishded p {
+    font-size: 14px;
+  }
+
+  .container .card .card-body .card-title h2 {
+    font-size: 18px;
+  }
+
+  .container .card .card-body .card-text {
+    font-size: 14px;
+  }
+
+  .container .card .card-body .card-profile .img-profile {
+    width: 50px;
+  }
+}
